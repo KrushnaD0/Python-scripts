@@ -1,10 +1,5 @@
 import paramiko
 import sys
-import warnings
-from cryptography.utils import CryptographyDeprecationWarning
-
-warnings.filterwarnings("ignore", category=CryptographyDeprecationWarning)
-
 
 def ssh_connect_and_create_user(host, username, password, new_user, cron_job):
     try:
